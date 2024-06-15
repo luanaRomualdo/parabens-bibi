@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: url(gifs-de-balao-11.gif) no-repeat ; /* Cor de fundo preta */
+  background-size: cover;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  gap: 20px; /* Espaçamento entre as colunas */
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.quiz-column, .card-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #333333, #666666); /* Gradiente de cores punk */
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+}
+
+.date-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('animated.gif') no-repeat center center;
+  background-size: cover;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+}
+
+.question {
+  margin: 20px 0;
+}
+
+button {
+  background-color: #555555; /* Cor do botão mais escura */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #777777; /* Cor do botão mais clara ao passar o mouse */
+}
+
+#card-container img {
+  width: 150px; /* Aumento do tamanho da imagem da carta */
+  height: auto;
+}
+
+#congratulations {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#date-image img {
+  max-width: 100%;
+  height: auto;
+}
