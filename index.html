@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabénssss 🎂</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column quiz-column">
+            <div id="quiz">
+                <h2>Abrindo a 'carta'...</h2>
+                <div id="question1" class="question">
+                    <p>Qual é o nome do melhor amigo do C-3PO??</p>
+                    <button onclick="checkAnswer(1, 'T-800')">T-800</button>
+                    <button onclick="checkAnswer(1, 'R2-D2')">R2-D2</button>
+                </div>
+                <div id="question2" class="question" style="display:none;">
+                    <p>Bagel , Dedos de salcicha e Pedras Falantes </p>
+                    <button onclick="checkAnswer(2, 'Tudo em todo lugar ao mesmo tempo')">Tudo em todo lugar ao mesmo tempo</button>
+                    <button onclick="checkAnswer(2, 'Cloud Atlas')">Cloud atlas</button>
+                </div>
+                <div id="question3" class="question" style="display:none;">
+                    <p>Em que ano foi lançado "Matrix"?</p>
+                    <button onclick="checkAnswer(3, '1999')">1999</button>
+                    <button onclick="checkAnswer(3, '2000')">2000</button>
+                </div>
+            </div>
+        </div>
+        <div class="column date-column" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+          <div id="date-input" style="margin-bottom: 20px;">
+              <h2 style="margin-bottom: 10px;">A data mais importante do ano '-'</h2>
+              <input type="date" id="date" style="width: 150px; text-align: center; padding: 10px; margin-bottom: 10px;">
+          </div>
+          <button onclick="checkDate()" style="padding: 10px 20px; font-size: 16px; border-radius: 10px; cursor: pointer;">Confirmar</button>
+          <div id="date-image" style="display:none; margin-top: 20px;">
+              <img src="qr-code.png" alt="Imagem Liberada" style="width: 150px;">
+          </div>
+      </div>
+      
+        <div class="column card-column">
+            <div id="card-container">
+                <img id="card-image" src="carta.png" alt="Carta" style="width: 250px;">
+                <p id="congratulations" style="display:none;">Parabéns pelo seu dia, você é incrível, inteligente, meigo, lindo, apaixonante, animado, bem humorado, doce, super competente, bondoso, maravilhoso, enfim perfeito ((; Te admiro muito!
+
+                  Obrigada por fazer parte da minha vida ❤️ que esse novo ano seja repleto de coisas boas pra você! Eu te amo muito!</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
